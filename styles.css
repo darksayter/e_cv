@@ -114,6 +114,23 @@ section h2 {
     cursor: pointer;
 }
 
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #6c63ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #3f3d56;
+}
+
 /* Education Section */
 #education {
     padding: 50px 0;
