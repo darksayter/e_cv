@@ -13,6 +13,16 @@ body {
     padding: 20px 0;
 }
 
+.no-decoration {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-decoration:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Header */
 header {
     background: linear-gradient(135deg, #6c63ff, #3f3d56);
@@ -104,6 +114,30 @@ section h2 {
     cursor: pointer;
 }
 
+/* Education Section */
+#education {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#education .container {
+    text-align: center;
+}
+
+#education h2 {
+    color: #3f3d56;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#education p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
 /* Skills Section */
 .skills-list {
     list-style: none;
@@ -135,6 +169,51 @@ section h2 {
 .project h3 {
     color: #6c63ff;
     margin: 0 0 10px;
+}
+
+#projects h3 {
+    color: #3f3d56;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#projects .project {
+    margin-bottom: 20px;
+}
+
+#projects .project h4 {
+    color: #3f3d56;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#projects .project p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.more-projects {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #3f3d56;
 }
 
 /* Contact Section */

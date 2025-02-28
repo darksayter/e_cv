@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
 
     <nav>
         <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="#about">A Propos</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#projects">Projets</a></li>
@@ -28,6 +29,15 @@
             <h2>A Propos de moi</h2>
             <p>Bonjour! Je suis un étudiant en informatique passionné par le développement de logiciels, la résolution de problèmes et la création de solutions innovantes. Mon objectif est de contribuer à des projets impactants tout en apprenant continuellement de nouvelles technologies.</p>
             <a href="CV_Alexandre_Duvet.pdf" download class="cv">Télécharger mon CV</a>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Mon Cursus à l'IUT de Calais</h2>
+            <p>Je suis actuellement étudiant à l'IUT de Calais où j'ai acquis de solides compétences en informatique. Mon parcours m'a permis de maîtriser plusieurs langages de programmation tels que Python, JavaScript et PHP, ainsi que des frameworks comme Symfony et Vue.js.</p>
+            <p>En plus de mes compétences techniques, j'ai également développé des compétences en gestion de projets, en travail d'équipe et en résolution de problèmes. J'ai eu l'opportunité de travailler sur divers projets, notamment la création de sites web et d'applications, ce qui m'a permis de mettre en pratique mes connaissances théoriques.</p>
+            <p>À l'avenir, je souhaite intégrer le marché du travail en tant que développeur. Mon objectif est de contribuer à des projets innovants et de continuer à apprendre et à évoluer dans le domaine de l'informatique. Je suis particulièrement intéressé par les technologies web et le développement d'applications, et je suis motivé à apporter mes compétences et mon enthousiasme à une équipe dynamique.</p>
         </div>
     </section>
 
@@ -52,10 +62,15 @@
             </div>
             <div class="project">
                 <h3>Site pour un tournoi de popularité</h3>
-                <p>Développement d'un site web permettant d'organiser et de gérer des tournois de popularité entre animés et mangas, en utilisant PHP et MySQL pour le backend et HTML, CSS, et JavaScript pour le frontend.</p>
+                <p>Développement d'un site web permettant d'organiser et de gérer des tournois de popularité entre animés et mangas, en utilisant PHP et MySQL pour le backend et HTML et CSS pour le frontend.</p>
             </div>
             <div class="project">
-                <h3></h3>
+                <h3><a href="https://iutcalais40ans.jrcan.dev" class="no-decoration">Site web 40 ans de l'IUT</a></h3>
+                <p>Création d'un site web pour célébrer les 40 ans de l'IUT de Calais, en utilisant le langage PHP ainsi que le langage MySQL pour la base de données.</p>
+            </div>
+            <div class="more-projects">
+                <a href="projets.html" class="btn">Voir plus de projets juste ici</a>
+            </div>
         </div>
     </section>
 
@@ -77,6 +92,12 @@
         </div>
     </footer>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("vxd6Q5xl8X37ZGcPS");
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

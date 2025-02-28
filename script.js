@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Contact Form Submission Alert
+// Contact Form Submission Alert and Email Sending
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent actual form submission
 
@@ -33,8 +33,16 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     const message = this.querySelector('textarea[name="message"]').value;
 
     if (name && email && message) {
-        alert(`Merci, ${name}! Votre message a été envoyé.`);
-        this.reset(); // Clear form fields
+        emailjs.send("service_exnwjdf", "template_hhdohs6", {
+            from_name: name,
+            from_email: email,
+            message: message
+        }).then(function(response) {
+            alert(`Merci, ${name}! Votre message a été envoyé.`);
+            document.getElementById('contact-form').reset(); // Clear form fields
+        }, function(error) {
+            alert('Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.');
+        });
     } else {
         alert('S\'il vous plaît remplissez tous les champs avant d\'envoyer.');
     }
